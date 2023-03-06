@@ -131,5 +131,8 @@
       }
     }
   },
-  "defaultProject": "ntitsolutions.WebUI"
+  "defaultProject": "ntitsolutions.WebUI",
+  "cli": {
+    "analytics": false
+  }
 }
