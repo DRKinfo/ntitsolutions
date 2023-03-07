@@ -1,7 +1,7 @@
-﻿using ntitsolutions.Application.WeatherForecasts.Queries.GetWeatherForecasts;
-using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Mvc;
+using ntitsolutions.Application.WeatherForecasts.Queries.GetWeatherForecasts;
 
-namespace ntitsolutions.WebUI.Controllers;
+namespace WebUI.Controllers;
 
 public class WeatherForecastController : ApiControllerBase
 {

@@ -1,8 +1,7 @@
 ﻿using System.Security.Claims;
-
 using ntitsolutions.Application.Common.Interfaces;
 
-namespace ntitsolutions.WebUI.Services;
+namespace WebUI.Services;
 
 public class CurrentUserService : ICurrentUserService
 {

@@ -2,10 +2,10 @@
 
 public class TodoItemDeletedEvent : BaseEvent
 {
-    public TodoItemDeletedEvent(TodoItem item)
+    public TodoItemDeletedEvent(Plano item)
     {
         Item = item;
     }
 
-    public TodoItem Item { get; }
+    public Plano Item { get; }
 }

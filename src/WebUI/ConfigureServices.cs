@@ -1,13 +1,13 @@
-﻿using ntitsolutions.Application.Common.Interfaces;
-using ntitsolutions.Infrastructure.Persistence;
-using ntitsolutions.WebUI.Filters;
-using ntitsolutions.WebUI.Services;
-using FluentValidation.AspNetCore;
+﻿using FluentValidation.AspNetCore;
 using Microsoft.AspNetCore.Mvc;
 using NSwag;
 using NSwag.Generation.Processors.Security;
+using ntitsolutions.Application.Common.Interfaces;
+using ntitsolutions.Infrastructure.Persistence;
+using WebUI.Filters;
+using WebUI.Services;
 
-namespace Microsoft.Extensions.DependencyInjection;
+namespace WebUI;
 
 public static class ConfigureServices
 {

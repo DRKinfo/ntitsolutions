@@ -1,9 +1,10 @@
 ﻿using System.Reflection;
-using ntitsolutions.Application.Common.Behaviours;
 using FluentValidation;
 using MediatR;
+using Microsoft.Extensions.DependencyInjection;
+using ntitsolutions.Application.Common.Behaviours;
 
-namespace Microsoft.Extensions.DependencyInjection;
+namespace ntitsolutions.Application;
 
 public static class ConfigureServices
 {

@@ -5,9 +5,8 @@ namespace ntitsolutions.Application.Common.Interfaces;
 
 public interface IApplicationDbContext
 {
-    DbSet<TodoList> TodoLists { get; }
-
-    DbSet<TodoItem> TodoItems { get; }
+    DbSet<Plano> Planos { get; }
+    DbSet<Tarifa> Tarifas { get; }
 
     Task<int> SaveChangesAsync(CancellationToken cancellationToken);
 }

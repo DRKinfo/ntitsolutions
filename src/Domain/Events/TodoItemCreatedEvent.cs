@@ -2,10 +2,10 @@
 
 public class TodoItemCreatedEvent : BaseEvent
 {
-    public TodoItemCreatedEvent(TodoItem item)
+    public TodoItemCreatedEvent(Plano item)
     {
         Item = item;
     }
 
-    public TodoItem Item { get; }
+    public Plano Item { get; }
 }

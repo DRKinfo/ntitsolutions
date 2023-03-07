@@ -8,6 +8,7 @@ using MediatR;
 using Microsoft.AspNetCore.ApiAuthorization.IdentityServer;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Options;
+using ntitsolutions.Infrastructure.Common;
 
 namespace ntitsolutions.Infrastructure.Persistence;
 
@@ -27,9 +28,8 @@ public class ApplicationDbContext : ApiAuthorizationDbContext<ApplicationUser>, 
         _auditableEntitySaveChangesInterceptor = auditableEntitySaveChangesInterceptor;
     }
 
-    public DbSet<TodoList> TodoLists => Set<TodoList>();
-
-    public DbSet<TodoItem> TodoItems => Set<TodoItem>();
+    public DbSet<Tarifa> Tarifas => Set<Tarifa>();
+    public DbSet<Plano> Planos => Set<Plano>();
 
     protected override void OnModelCreating(ModelBuilder builder)
     {

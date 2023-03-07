@@ -1,7 +1,8 @@
-﻿using ntitsolutions.Domain.Common;
+﻿using MediatR;
 using Microsoft.EntityFrameworkCore;
+using ntitsolutions.Domain.Common;
 
-namespace MediatR;
+namespace ntitsolutions.Infrastructure.Common;
 
 public static class MediatorExtensions
 {

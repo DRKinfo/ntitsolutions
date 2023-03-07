@@ -1,4 +1,7 @@
+using ntitsolutions.Application;
+using ntitsolutions.Infrastructure;
 using ntitsolutions.Infrastructure.Persistence;
+using WebUI;
 
 var builder = WebApplication.CreateBuilder(args);
 

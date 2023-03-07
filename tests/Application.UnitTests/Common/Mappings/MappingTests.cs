@@ -1,8 +1,8 @@
 ﻿using System.Runtime.Serialization;
 using AutoMapper;
 using ntitsolutions.Application.Common.Mappings;
-using ntitsolutions.Application.Common.Models;
-using ntitsolutions.Application.TodoLists.Queries.GetTodos;
+using ntitsolutions.Application.Planos.Queries.GetPlanosWithPagination;
+using ntitsolutions.Application.Tarifas.Queries.GetTarifas;
 using ntitsolutions.Domain.Entities;
 using NUnit.Framework;
 
@@ -28,10 +28,8 @@ public class MappingTests
     }
 
     [Test]
-    [TestCase(typeof(TodoList), typeof(TodoListDto))]
-    [TestCase(typeof(TodoItem), typeof(TodoItemDto))]
-    [TestCase(typeof(TodoList), typeof(LookupDto))]
-    [TestCase(typeof(TodoItem), typeof(LookupDto))]
+    [TestCase(typeof(Tarifa), typeof(TarifaDto))]
+    [TestCase(typeof(Plano), typeof(PlanoDto))]
     public void ShouldSupportMappingFromSourceToDestination(Type source, Type destination)
     {
         var instance = GetInstanceOf(source);
@@ -44,7 +42,6 @@ public class MappingTests
         if (type.GetConstructor(Type.EmptyTypes) != null)
             return Activator.CreateInstance(type)!;
 
-        // Type without parameterless constructor
         return FormatterServices.GetUninitializedObject(type);
     }
 }

@@ -72,20 +72,20 @@ public class ApplicationDbContextInitialiser
             }
         }
 
-        // Default data
-        // Seed, if necessary
-        if (!_context.TodoLists.Any())
+        // Popula tabela Plano
+        if (!_context.Planos.Any())
         {
-            _context.TodoLists.Add(new TodoList
+            _context.Planos.Add(new Plano()
             {
-                Title = "Todo List",
-                Items =
-                {
-                    new TodoItem { Title = "Make a todo list 📃" },
-                    new TodoItem { Title = "Check off the first item ✅" },
-                    new TodoItem { Title = "Realise you've already done two things on the list! 🤯"},
-                    new TodoItem { Title = "Reward yourself with a nice, long nap 🏆" },
-                }
+                Nome = "FaleMais 30"
+            });
+            _context.Planos.Add(new Plano()
+            {
+                Nome = "FaleMais 60"
+            });
+            _context.Planos.Add(new Plano()
+            {
+                Nome = "FaleMais 120"
             });
 
             await _context.SaveChangesAsync();
